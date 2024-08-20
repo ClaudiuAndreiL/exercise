@@ -1,13 +1,8 @@
-﻿namespace ProgrammingExercise.Features.v3
+﻿namespace ProgrammingExercise.Features.AlgoLand.v1.Services
 {
-    public interface IPalindromeService
+    public static class PalindromeHelper
     {
-        bool IsPalindrome(string input);
-    }
-
-    public class PalindromeService : IPalindromeService
-    {
-        public bool IsPalindrome(string input)
+        public static bool IsPalindrome(this string input)
         {
             if (string.IsNullOrWhiteSpace(input))
             {

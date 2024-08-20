@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ProgrammingExercise.Features.v1.Services;
+using ProgrammingExercise.Features.AlgoLand.v1.Services;
 
 namespace ProgrammingExercise.Controllers
 {

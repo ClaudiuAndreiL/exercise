@@ -1,12 +1,11 @@
 ﻿using Bogus;
-using ProgrammingExercise.Features.v1.Services;
 using ProgrammingExercise.Models.Internal;
 
-namespace ProgrammingExercise.Features.v2
+namespace ProgrammingExercise.Features.AlgoLand.v2
 {
     public interface IAlgoRunnerServiceV2
     {
-
+        Task<ServiceResponse<string>> GetResult();
     }
 
     public class AlgoRunnerServiceV2 : IAlgoRunnerServiceV2

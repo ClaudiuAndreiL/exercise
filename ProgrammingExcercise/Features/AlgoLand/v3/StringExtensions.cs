@@ -1,4 +1,4 @@
-﻿namespace ProgrammingExercise.Features.v3
+﻿namespace ProgrammingExercise.Features.AlgoLand.v3
 {
     public static class StringExtensions
     {

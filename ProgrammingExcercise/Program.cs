@@ -1,7 +1,7 @@
 
-using ProgrammingExercise.Features.v1.Services;
-using ProgrammingExercise.Features.v2;
-using ProgrammingExercise.Features.v3;
+using ProgrammingExercise.Features.AlgoLand.v1.Services;
+using ProgrammingExercise.Features.AlgoLand.v2;
+using ProgrammingExercise.Features.AlgoLand.v3;
 
 namespace ProgrammingExercise
 {

@@ -1,6 +1,6 @@
 ﻿using Moq;
-using ProgrammingExercise.Features.v2;
-using ProgrammingExercise.Features.v3;
+using ProgrammingExercise.Features.AlgoLand.v2;
+using ProgrammingExercise.Features.AlgoLand.v3;
 using ProgrammingExercise.Models.Internal;
 using System;
 using System.Collections.Generic;

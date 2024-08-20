@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ProgrammingExercise.Features.v2
+namespace ProgrammingExercise.Features.AlgoLand.v2
 {
     public interface IPigLatinService
     {

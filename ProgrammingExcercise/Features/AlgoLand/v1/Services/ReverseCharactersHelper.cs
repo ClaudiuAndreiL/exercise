@@ -1,4 +1,4 @@
-﻿namespace ProgrammingExercise.Features.v1.Services
+﻿namespace ProgrammingExercise.Features.AlgoLand.v1.Services
 {
     public static class ReverseCharactersHelper
     {

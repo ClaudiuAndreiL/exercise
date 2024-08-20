@@ -1,16 +1,10 @@
 ﻿using ProgrammingExercise.Models.Internal;
 
-namespace ProgrammingExercise.Features.v2
+namespace ProgrammingExercise.Features.AlgoLand.v1.Services
 {
-    public interface ITimeProviderService
+    public static class TimeProviderHelper
     {
-        Task<ServiceResponse<DateTime?>> GetCurrentTime();
-    }
-
-    public class TimeProviderService : ITimeProviderService
-    {
-
-        public async Task<ServiceResponse<DateTime?>> GetCurrentTime()
+        public static async Task<ServiceResponse<DateTime?>> GetCurrentTime()
         {
             var httpClient = new HttpClient
             {

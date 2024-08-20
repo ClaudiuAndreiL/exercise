@@ -1,7 +1,7 @@
 ﻿using Bogus;
 using ProgrammingExercise.Models.Internal;
 
-namespace ProgrammingExercise.Features.v1.Services
+namespace ProgrammingExercise.Features.AlgoLand.v1.Services
 {
 
 
@@ -23,20 +23,20 @@ namespace ProgrammingExercise.Features.v1.Services
             var currentTimeResponse = await TimeProviderHelper.GetCurrentTime();
             var someImportantData = new Faker().Lorem.Paragraph();
 
-            if(!currentTimeResponse.IsValid)
+            if (!currentTimeResponse.IsValid)
                 return new ServiceResponse<string>(currentTimeResponse.Error!);
 
-            if(currentTimeResponse.Data!.Value.Second % 2 == 0)
+            if (currentTimeResponse.Data!.Value.Second % 2 == 0)
             {
                 return new ServiceResponse<string>(PigLatinHelper.ConvertToPigLatin(someImportantData));
             }
 
-            if(currentTimeResponse.Data.Value.Second % 3 == 0)
+            if (currentTimeResponse.Data.Value.Second % 3 == 0)
             {
                 return new ServiceResponse<string>(someImportantData.IsPalindrome().ToString());
             }
 
-            if(currentTimeResponse.Data.Value.Second % 5 == 0)
+            if (currentTimeResponse.Data.Value.Second % 5 == 0)
             {
                 return new ServiceResponse<string>(ReverseCharactersHelper.Reverse(someImportantData));
             }

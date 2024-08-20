@@ -1,8 +1,8 @@
 ﻿using Bogus;
-using ProgrammingExercise.Features.v2;
+using ProgrammingExercise.Features.AlgoLand.v2;
 using ProgrammingExercise.Models.Internal;
 
-namespace ProgrammingExercise.Features.v3
+namespace ProgrammingExercise.Features.AlgoLand.v3
 {
     public interface IAlgoRunnerServiceV3
     {
