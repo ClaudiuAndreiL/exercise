@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgrammingExercise", "Prog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeProviderAPI", "TimeProviderAPI\TimeProviderAPI.csproj", "{F57B58EF-E35C-4E96-BE11-D870026DD5B9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C56DAC85-4AE5-4D12-B3C1-5321C5D4956D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "ProgrammingExercise.UnitTests\UnitTests.csproj", "{F21FABD4-5324-4F44-81F1-91A78648A44A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +25,16 @@ Global
 		{F57B58EF-E35C-4E96-BE11-D870026DD5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F57B58EF-E35C-4E96-BE11-D870026DD5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F57B58EF-E35C-4E96-BE11-D870026DD5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F21FABD4-5324-4F44-81F1-91A78648A44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21FABD4-5324-4F44-81F1-91A78648A44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21FABD4-5324-4F44-81F1-91A78648A44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21FABD4-5324-4F44-81F1-91A78648A44A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F21FABD4-5324-4F44-81F1-91A78648A44A} = {C56DAC85-4AE5-4D12-B3C1-5321C5D4956D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A8EBF9C-3BF4-444B-B0F8-C6D4B2C7D443}

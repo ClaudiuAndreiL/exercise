@@ -1,4 +1,8 @@
 
+using ProgrammingExercise.Features.v1.Services;
+using ProgrammingExercise.Features.v2;
+using ProgrammingExercise.Features.v3;
+
 namespace ProgrammingExercise
 {
     public class Program
@@ -8,6 +12,13 @@ namespace ProgrammingExercise
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+            builder.Services.AddScoped<IAlgoRunnerService, AlgoRunnerService>();
+
+            builder.Services.AddScoped<ITimeProviderService, TimeProviderService>();
+            builder.Services.AddScoped<IAlgoRunnerServiceV2, AlgoRunnerServiceV2>();
+            builder.Services.AddScoped<IPigLatinService, PigLatinService>();
+            builder.Services.AddScoped<IPalindromeService, PalindromeService>();
+
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

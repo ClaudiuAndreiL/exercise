@@ -10,7 +10,8 @@ namespace TimeProviderAPI.Controllers
         {
         }
 
-        [HttpGet(Name = "current-time")]
+        [HttpGet]
+        [Route("current-time")]
         public async Task<IActionResult> Get()
         {
             var datetime = DateTime.UtcNow;

@@ -1,8 +1,8 @@
-﻿namespace ProgrammingExercise.Services.Algos
+﻿namespace ProgrammingExercise.Features.v1.Services
 {
-    public class PalindromeService
+    public static class PalindromeHelper
     {
-        public static bool IsPalindrome(string input)
+        public static bool IsPalindrome(this string input)
         {
             if (string.IsNullOrWhiteSpace(input))
             {

@@ -1,4 +1,4 @@
-﻿namespace ProgrammingExercise.Services.Algos
+﻿namespace ProgrammingExercise.Algos
 {
     public class ReverseWordsService
     {

@@ -1,14 +1,20 @@
 ﻿using ProgrammingExercise.Models.Internal;
 
-namespace ProgrammingExercise.Services
+namespace ProgrammingExercise.Features.v2
 {
-    public static class TimeProviderHelper
+    public interface ITimeProviderService
     {
-        public static async Task<ServiceResponse<DateTime?>> GetCurrentTime()
+        Task<ServiceResponse<DateTime?>> GetCurrentTime();
+    }
+
+    public class TimeProviderService : ITimeProviderService
+    {
+
+        public async Task<ServiceResponse<DateTime?>> GetCurrentTime()
         {
             var httpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:7039")
+                BaseAddress = new Uri("http://localhost:5092")
             };
 
             try

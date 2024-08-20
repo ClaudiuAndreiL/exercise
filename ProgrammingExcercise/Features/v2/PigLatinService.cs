@@ -1,10 +1,15 @@
 ﻿using System.Text;
 
-namespace ProgrammingExercise.Services.Algos
+namespace ProgrammingExercise.Features.v2
 {
-    public class PigLatinService
+    public interface IPigLatinService
     {
-        public static string ConvertToPigLatin(string sentence)
+        string ConvertToPigLatin(string sentence);
+    }
+
+    public class PigLatinService : IPigLatinService
+    {
+        public string ConvertToPigLatin(string sentence)
         {
             if (string.IsNullOrWhiteSpace(sentence))
             {
